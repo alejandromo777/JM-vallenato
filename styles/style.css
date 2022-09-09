@@ -78,11 +78,7 @@ body {
     list-style: none;
     
 }
-.icon-menu {
-    display: none;
-}
 
- 
 .navegation__mobile-container{
     display: none;
 }
@@ -113,7 +109,7 @@ body {
     
 }
 .header__title {
-    min-width: 100px;
+    width: 100%;
     color: white;
     font-size: 6rem;
     font-weight:400;
@@ -153,6 +149,10 @@ iframe {
     -moz-box-shadow: -17px 20px 46px -8px rgba(0,0,0,0.75);
     box-shadow: -17px 20px 46px -8px rgba(0,0,0,0.75);
 }
+.icon-menu {
+    display: block;
+    color: white;
+}
 
 @media (max-width:800px) {
     .header__about-us{
@@ -170,10 +170,18 @@ iframe {
 }
 @media (max-width:700px) {
     .header__container {
-        width: 100%;
+        width: 100vh;
     }
     .main__videos{
         width: 100%;
     }
-
+    .header__title {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+}
+@media (min-width:699px) {
+    .icon-menu {
+        display: none;
+    }
 }
