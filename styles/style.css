@@ -16,9 +16,9 @@ body {
 
 /* barra de navegacion*/
 .navegation {
-    width: 100%;
-    min-width: 100vh;
+    width: 100vw;
     height: 3rem;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,14 +27,15 @@ body {
    
 }
 .navegation__left {
-    width: 70%;
+    width: 60%;
     height: auto;
     display: flex;
     align-items: center;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 .navegation__title {
-    width:50%;
+    width:100%;
+    margin: 0 auto;
     height: auto;
     font-size: 1.3rem;
     font-weight: 400;
@@ -49,16 +50,16 @@ body {
     color:rgba(235, 17, 17, 0.904);
 }
 .navegation__number {
-    width: 50%;
+    width: 70%;
     color: rgba(239, 247, 247, 0.822);
     font-size: 1rem;
     font-weight: 300;
     line-height: 1rem;
-    margin-left: 18px;
+    margin: 0 auto;
 }
 .navegation__rigth {
-    width: 50%;
-    margin-left: 10px;
+    width: 40%;
+    margin: 0 auto;
 }
 .items__nav {
     display: flex;
@@ -67,8 +68,8 @@ body {
     
 }
 .item__nav a {
-    padding: 12px;
-    margin: 0 15px;
+    padding: 8px;
+    margin: 0 auto;
     text-decoration: none;
     color: rgba(239, 247, 247, 0.993);
 }
@@ -81,19 +82,24 @@ body {
     
 }
 
-.navegation__mobile-container{
+.navegation__mobile {
     display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 3rem;
 }
 /*header*/
 .header__container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    display: flex;
-    background-image: url('../fotos/sombrero.jpg');
+    background-image: url('../fotos/big.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-attachment: fixed;
 }
 .header-shadow {
     width: 100%;
@@ -121,7 +127,7 @@ body {
     color: white;
 }
 .header__about-us {
-    width: 30%;
+    width: 40%;
     display: grid;
     padding: 4px;
     place-items: center;
@@ -132,18 +138,19 @@ body {
 }
 /*main-videos*/
 .main__container {
-    width: 100%;
-    min-width: 100vh;
+    width: 100vw;
+    padding-top: 4rem;
     height: auto;
     background-color: rgba(239, 247, 247, 0.822);
     
 }
 .main__videos {
-    width: 0 auto;
+    width: 100%;
     height: auto;
-    padding: 8px;
+    margin: 0 auto;
     display: grid;
-    row-gap: 40px;
+    row-gap: 20px;
+    column-gap: 15px;
     place-items: center;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
@@ -155,17 +162,17 @@ iframe {
 .icon-menu {
     display: block;
     color: white;
+    cursor: pointer;
 }
 
 
    
 
-@media (max-width:700px) {
-    .header__container {
-        width: 100vh;
-    }
+@media (max-width:850px) {
+    
     .header__about-us{
-        display: none;
+        width: 80%;
+        margin-left: 20px;
     }
     .navegation__rigth{
         display: none;
@@ -181,15 +188,27 @@ iframe {
     .navegation__number {
         display: none;
     }
-    .main__container{
-        width: 100vh;
+    .header-shadow{
+        flex-direction: column;
+    } 
+    .main__videos {
+        row-gap: 15px;
+        column-gap: 12px;
+        place-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .header__container {
+        background-image: url('../fotos/small.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     }
 }
-@media (min-width:699px) {
+@media (min-width:849px) {
     .icon-menu {
         display: none;
     }
-    .header__container {
-        background-attachment: fixed;
-    }
+}
 }
