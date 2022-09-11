@@ -26,18 +26,18 @@
         </div>
         <div class="navegation__rigth">
             <ul class="items__nav">
-                <li class="item__nav"><a href="#">Videos</a> </li>
+                <li class="item__nav"><a href="#videos">Videos</a> </li>
                 <li class="item__nav"><a href="#">Fotos</a> </li>
                 <li class="item__nav"><a href="#">Precios</a> </li>
                 <li class="item__nav"><a href="#">Contacto</a> </li>
             </ul>
         </div>
-        <div class="navegation__mobile">
+        <div class="navegation__mobile inactive">
             <ul class="items__mobile">
-                <li class="item__mobile"><a href="#">Conocenos</a></li>
-                <li class="item__mobile"><a href="#">Videos</a> </li>
-                <li class="item__mobile"><a href="#">Fotos</a> </li>
-                <li class="item__mobile"><a href="#">Contacto</a> </li>
+                <li id="uno" class="item__mobile"><a href="#videos">Videos</a> </li>
+                <li id="dos" class="item__mobile"><a href="#">Fotos</a> </li>
+                <li id="tres" class="item__mobile"><a href="#">Precios</a></li>
+                <li id="cuatro" class="item__mobile"><a href="#">Contacto</a> </li>
             </ul>
         </div>
     </nav>
@@ -57,7 +57,7 @@
         </div>  
     </header>
     <main class="main__container">
-        <section class="main__videos">
+        <section id="videos" class="main__videos">
             
                 <iframe width="500" height="315" src="https://www.youtube.com/embed/wmHUa27TFDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="500" height="315" src="https://www.youtube.com/embed/P7JJYOSd8lE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -66,11 +66,19 @@
                 <iframe width="500" height="315" src="https://www.youtube.com/embed/J_ZzRjPjt0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="500" height="315" src="https://www.youtube.com/embed/ckGSuXksedc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-             
-             
+        </section>
+        <section id="fotos" class="images__container">
+            <div class="images__parte-uno">
+                <button class="images__ver-mas">ver mas</button>
+            </div>
+            <div class="images__parte-dos">
+                <button class="images__ver-menos">ver menos</button>
+            </div>
+
         </section>
     </main>
     
     <footer></footer>
+    <script src="./app.js"></script>
 </body>
 </html>
