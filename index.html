@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="vallenato, parranda, vallenata, bogota, soacha, cundinamarca, musica colombiana, fiestas, eventos, matrimonios, musicos ">
     <meta name="description" content="parranda vallenata Bogotá y alrrededores, exelente presentación y cumplimiento, contamos con mas de 20 años de experiencia, amenizando eventos y fiestas de todo tipo. ">
     <meta name="robots" content="index, follow">
     <link  rel="stylesheet" href="./styles/style.css">
@@ -27,22 +28,27 @@
         <div class="navegation__rigth">
             <ul class="items__nav">
                 <li class="item__nav"><a href="#videos">Videos</a> </li>
-                <li class="item__nav"><a href="#">Fotos</a> </li>
-                <li class="item__nav"><a href="#">Precios</a> </li>
-                <li class="item__nav"><a href="#">Contacto</a> </li>
+                <li class="item__nav"><a href="#fotos">Fotos</a> </li>
+                <li class="item__nav"><a href="#precios">Precios</a> </li>
+                <li class="item__nav"><a href="#contacto">Contacto</a> </li>
             </ul>
         </div>
         <div class="navegation__mobile inactive">
             <ul class="items__mobile">
-                <li id="uno" class="item__mobile"><a href="#videos">Videos</a> </li>
-                <li id="dos" class="item__mobile"><a href="#">Fotos</a> </li>
-                <li id="tres" class="item__mobile"><a href="#">Precios</a></li>
-                <li id="cuatro" class="item__mobile"><a href="#">Contacto</a> </li>
+                <li id="uno" class="item__mobile"><a href="#home">Home</a> </li>
+                <li id="dos" class="item__mobile"><a href="#videos">Videos</a> </li>
+                <li id="tres" class="item__mobile"><a href="#fotos">Fotos</a> </li>
+                <li id="cuatro" class="item__mobile"><a href="#precios">Precios</a></li>
+                <li id="cinco" class="item__mobile"><a href="#contacto">Contacto</a> </li>
             </ul>
         </div>
     </nav>
-    
-    <header class="header__container">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/573043382682" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+      
+    <header id="home" class="header__container">
         <div class="header-shadow"> 
             <div class="header__main">
                     <h1 class="header__title"> 
@@ -69,16 +75,68 @@
         </section>
         <section id="fotos" class="images__container">
             <div class="images__parte-uno">
-                <button class="images__ver-mas">ver mas</button>
+                <img src="./fotos/img-1.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-2.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-3.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-4.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-5.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-6.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-7.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-8.jpeg" alt="JM vallenato foto" class="image__item">
             </div>
-            <div class="images__parte-dos">
-                <button class="images__ver-menos">ver menos</button>
+            <button class="images__ver-mas">ver mas</button>
+            <div class="images__parte-dos inactive">
+                <img src="./fotos/img-9.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-10.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-11.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-12.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-13.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-14.jpeg" alt="JM vallenato foto" class="image__item">
+                <img src="./fotos/img-15.jpeg" alt="JM vallenato foto" class="image__item">
             </div>
-
+            <button class="images__ver-menos inactive">ver menos</button>
+        </section>
+        <section id="precios" class="precios__container">
+            <div class="precios__shadow">
+                <h2 class="precios__title">PRECIOS</h2>
+                <div class="precios__cards-container">
+                    <article class="precios__card">
+                        <div class="precios__sombra">
+                            <h2 class="precio__title">OPCIÓN 1</h2>
+                            <p class="precio__text">Tres músicos con 3 instrumentos que son: Caja, Guacharaca y acordeón. El cantante canta y a la vez toca un instrumento. Es una opción ideal para serenatas o reuniones pequeñas. La primer hora tiene un costo de:</p>
+                            <p class="precio__hora"><span>$230</span>mil</p>
+                            <p class="precio__adicional">$200 mil la hora adicional</p>
+                        </div>
+                    </article>
+                    <article class="precios__card">
+                        <div class="precios__sombra">
+                            <h2 class="precio__title">OPCIÓN 2</h2>
+                            <p class="precio__text">Cuatro músicos con 4 instrumentos que son: Caja, Guacharaca, acordeón y bajo electrónico, más sonido/amplificación y transporte incluido. El cantante canta y a la vez toca un instrumento. La primer hora tiene un costo de:</p>
+                            <p class="precio__hora"><span>$280</span>mil</p>
+                            <p class="precio__adicional">$230 mil la hora adicional</p>
+                    </article>
+                </div>
+            </div>   
         </section>
     </main>
     
-    <footer></footer>
+    <footer id="contacto">
+        <div class="footer__left">
+            <h2 class="footer__title">
+                <span>JM </span>    
+                <span>parranda</span> <span>vallenata</span> </h2>
+        </div>
+        <div class="footer__icons-container">
+            <a href="#" target="_blank"><img src="./iconos/instagram.svg" alt="icono instagram"></a>
+            <a href="#" target="_blank"><img src="./iconos/facebook.svg" alt="icono facebook"></a>
+            <a href="https://www.youtube.com/channel/UCLgSBuCA1g0iBxc09UK_nDQ" target="_blank"><img src="./iconos/youtube.svg" alt="icono youtube"></a>    
+        </div>
+        <div class="derechos">
+            <p>todos los derechos reservados</p>
+            <p>diseño por: Alejandro Moreno, web developer</p>
+            <p>e-mail:skasantafeskaska@gmail.com</p>
+        </div>
+    </footer>
     <script src="./app.js"></script>
 </body>
 </html>
