@@ -9,11 +9,11 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-   
+    overflow-x: hidden;
 }
 * {
     box-sizing: border-box;
-    
+    overflow-x: hidden;
 }
 .inactive {
     display: none !important;
@@ -392,18 +392,17 @@ iframe {
     margin-top: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .footer__left {
-    width: auto;
+    width: fit-content;
     height: auto;
     display: flex;
     align-items: center;
-    margin: 20px;
+    
 }
 .footer__title {
-    width:auto;
-    margin: 0 auto;
+    width:fit-content;
     height: auto;
     font-size: 1.3rem;
     font-weight: 400;
@@ -427,7 +426,7 @@ iframe {
 }
 
 .derechos {
-    width: auto;
+    width: fit-content;
     height: auto;
     display: flex;
     flex-direction: column;
